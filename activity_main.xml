@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="#E35B5B"
+    android:padding="24dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/total_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Questions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#151414"
+        android:textSize="31dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This will be our Question"
+        android:layout_marginTop="12dp"
+        android:textColor="#271616"
+        android:textSize="26dp"
+        android:layout_above="@+id/choices_layout"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choices_layout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/option_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option A"
+            android:textColor="#1B1919"
+            android:textSize="24sp"
+            android:backgroundTint="#EDE9E9"/>
+        <Button
+            android:id="@+id/option_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option B"
+            android:textColor="#1B1919"
+            android:textSize="24sp"
+            android:backgroundTint="#EDE9E9"/>
+        <Button
+            android:id="@+id/option_C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option C"
+            android:textColor="#1B1919"
+            android:textSize="24sp"
+            android:backgroundTint="#EDE9E9"/>
+        <Button
+            android:id="@+id/option_D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option D"
+            android:textColor="#1B1919"
+            android:textSize="24sp"
+            android:backgroundTint="#EDE9E9"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/choices_layout"
+        android:textColor="#1B1919"
+        android:textSize="24sp"
+        android:backgroundTint="#1EE43E"/>
+</RelativeLayout>
